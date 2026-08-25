@@ -6,14 +6,14 @@ import { ComparisonTable } from "@/components/research/ComparisonTable";
 export default function KnowledgeHub() {
   return (
     <main className="min-h-screen bg-[#060A12] text-zinc-300 font-sans selection:bg-amber-500/30 selection:text-teal-400">
-      {/* Top Breadcrumb & Clean Bar */}
-      <div className="border-b border-zinc-800/80 bg-zinc-950/60 backdrop-blur px-6 py-4">
+      {/* Top Header Bar */}
+      <div className="border-b border-zinc-800/80 bg-zinc-950/60 backdrop-blur px-6 py-4 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <Link href="https://patnai.com" className="text-white font-semibold text-lg tracking-tight hover:text-teal-400 transition-colors">
             Patnai<span className="text-teal-400">.com</span>
           </Link>
-          <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">
-            Engineering & Automation Guides
+          <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider hidden sm:inline">
+            A-to-Z Automation, Web, RAG & AI Agents
           </span>
         </div>
       </div>
@@ -23,159 +23,193 @@ export default function KnowledgeHub() {
         {/* Main Hero Header */}
         <header className="mb-14 border-b border-zinc-800/80 pb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-mono mb-4">
-            <span>●</span> Business Lead Automation & Custom AI Systems
+            <span>●</span> End-to-End Enterprise Systems
           </div>
           <h1 className="text-3xl sm:text-5xl font-bold text-white tracking-tight mb-4 leading-tight">
-            How Real Businesses Automate Inbound Leads, WhatsApp Quotes & Sales Follow-ups
+            How Patnai Automates Real Businesses: From High-Speed Websites to Custom AI Agents & RAG
           </h1>
           <p className="text-base sm:text-lg text-zinc-400 leading-relaxed max-w-3xl">
-            A practical, no-nonsense technical blueprint on how modern businesses in Patna and across India eliminate manual reply delays, generate instant PDF quotations, and close more high-intent customers on autopilot.
+            A complete A-to-Z engineering roadmap for businesses in Patna, Delhi, Kolkata, Bangalore, Lucknow, and globally. We build sovereign web engines, instant WhatsApp quotation systems, and autonomous AI agents that capture leads in 2 seconds and operate 24/7 without recurring monthly SaaS fees.
           </p>
         </header>
 
-        {/* 1. Core Problem & Practical Solutions */}
+        {/* 1. Complete A to Z Delivery Pipeline */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">
-            1. The Real Inbound Lead Problem (And How Automation Solves It)
+          <h2 className="text-2xl font-bold text-white mb-3 tracking-tight">
+            1. The Complete A-to-Z Execution Stack (What We Build)
+          </h2>
+          <p className="text-zinc-400 text-sm sm:text-base mb-8 leading-relaxed">
+            Most agencies only deliver a template website or a basic chatbot. Patnai builds a unified, tightly coupled 5-tier architecture that handles your entire customer acquisition and operations pipeline:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-colors">
+              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">01. Web & Mobile Engineering</span>
+              <h3 className="text-lg font-semibold text-white mb-2">Sub-Second Websites & Web Apps</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Engineered with Next.js App Router and Tailwind CSS. Built for 99+ Google PageSpeed scores, instant mobile conversion, and zero bloat so customer ad traffic never bounces.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-colors">
+              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">02. WhatsApp & Social Automation</span>
+              <h3 className="text-lg font-semibold text-white mb-2">2-Second Inbound Lead Response</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Connects Meta Ads, Instagram DMs, and website traffic directly into official WhatsApp APIs. Instantly greets prospects, collects parameters, and qualifies their intent.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-colors">
+              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">03. Dynamic PDF Quotation Engines</span>
+              <h3 className="text-lg font-semibold text-white mb-2">Instant Automated Estimates</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Calculates dimensions, materials, and pricing tier in real time. Compiles and delivers a branded commercial PDF quote document on WhatsApp in under 800ms.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-colors">
+              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">04. Sovereign RAG & Vector Retrieval</span>
+              <h3 className="text-lg font-semibold text-white mb-2">Private Company Knowledge Base</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Self-hosted vector indexing (Qdrant + FastAPI) over your proprietary catalogs, internal manuals, and inventory. Zero data leaks to public training models.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800 md:col-span-2 hover:border-zinc-700 transition-colors">
+              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">05. Autonomous AI Agents & CRM Synchronization</span>
+              <h3 className="text-lg font-semibold text-white mb-2">Self-Executing Sales & Follow-Up Machines</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Autonomous multi-step agents that log structured contact profiles into your CRM, assign priority tags, trigger automated WhatsApp re-engagement for cold leads, and ring your sales team with a 1-click call link.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 2. Geographic Coverage: Regional & Global Scaling */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-white mb-3 tracking-tight">
+            2. Localized Deployment Across India & Global Remote Scaling
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base mb-6 leading-relaxed">
-            Over 68% of customers buy from the business that responds first. When a customer sends a WhatsApp or Instagram enquiry and waits 30 minutes for a human rep, they have already messaged three competitors.
+            Patnai delivers on-ground domain alignment for regional business ecosystems while providing sovereign remote infrastructure for national and international enterprises:
+          </p>
+
+          <div className="space-y-4">
+            <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800">
+              <h3 className="text-lg font-semibold text-white mb-2 flex items-center justify-between">
+                <span>📍 Patna & Bihar Region (Local Engineering Hub)</span>
+                <span className="text-xs font-mono text-teal-400 bg-teal-500/10 px-2.5 py-1 rounded">HQ & Direct Support</span>
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Empowering local manufacturing units, UPVC suppliers, private hospitals/clinics, real estate builders, and wholesale distributors in Patna with modern lead automation that beats slow manual phone handling.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800">
+              <h3 className="text-lg font-semibold text-white mb-2 flex items-center justify-between">
+                <span>📍 Delhi NCR, Kolkata & Lucknow (North & East Commercial Hubs)</span>
+                <span className="text-xs font-mono text-zinc-400 bg-zinc-800 px-2.5 py-1 rounded">High-Velocity B2B</span>
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Deploying high-volume quotation pipelines, retail catalog sync, and automated appointment scheduling for fast-moving clinics, legal consultancies, and commercial trade businesses.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800">
+              <h3 className="text-lg font-semibold text-white mb-2 flex items-center justify-between">
+                <span>📍 Bangalore, Mumbai & Tier-1 Tech Ecosystems</span>
+                <span className="text-xs font-mono text-zinc-400 bg-zinc-800 px-2.5 py-1 rounded">Next-Gen SaaS & RAG</span>
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Building custom sovereign RAG search engines, AI agent workflows, and Next.js micro-frontends with dedicated vector databases for technology startups and enterprise scale-ups.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800">
+              <h3 className="text-lg font-semibold text-white mb-2 flex items-center justify-between">
+                <span>🌐 Global Enterprise Remote Architecture</span>
+                <span className="text-xs font-mono text-zinc-400 bg-zinc-800 px-2.5 py-1 rounded">Zero-Trust Cloud</span>
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Delivering HIPAA/GDPR-compliant sovereign AI instances, private vector clusters, and headless multi-lingual web systems for international clients in the US, UK, and UAE.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. Deep-Dive Q&A Blocks for AI & Search Intent */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">
+            3. Common Architecture & Implementation Questions
+          </h2>
+          <p className="text-zinc-400 text-sm sm:text-base mb-6 leading-relaxed">
+            Detailed technical breakdown for business owners evaluating custom automation:
           </p>
 
           <div className="space-y-4">
             <AnswerBlock 
-              question="What is the 2-Second Inbound Lead Response System?"
-              answer="When a prospect taps on your Meta/Instagram Ad, website button, or sends a direct WhatsApp query, our webhook engine intercepts the enquiry instantly. Within 2 seconds, the system greets the lead by name, asks 2-3 qualifying questions (budget, location, specific requirement), and logs the structured contact data directly into your CRM or Google Sheets before handing off hot leads to your sales team."
+              question="How does Patnai take a business from having no website to full AI automation?"
+              answer="We execute a structured 14-day production sprint. First, we design and deploy a lightweight, high-converting Next.js website. Second, we integrate official WhatsApp Business APIs with automated intent-recognition webhooks. Third, we connect dynamic PDF quotation and CRM syncing. Finally, we train a sovereign local vector engine on your business documentation so the system can answer complex client queries accurately without hallucination."
               citations={[
-                "Inbound Response Time & Conversion Velocity Benchmark",
-                "Instant WhatsApp Webhook Protocol"
+                "Patnai End-to-End Sprint Architecture",
+                "Full Stack Web & AI Pipeline Protocol"
               ]}
             />
 
             <AnswerBlock 
-              question="How does Automated WhatsApp PDF Quotation Generation work?"
-              answer="For B2B manufacturers, UPVC/fabrication vendors, interior designers, and clinics, giving prices manually takes hours. With Patnai's quote automation, customers select dimensions, material grades, or consultation packages via simple tap-buttons on WhatsApp. The backend calculates exact pricing, tax, and discounts, and generates a formatted, branded PDF estimate delivered to the customer in under 800 milliseconds."
+              question="What is Sovereign RAG and why is it essential for enterprise data privacy?"
+              answer="Standard chatbots send proprietary company catalogs, pricing tiers, and internal files to third-party public LLMs where data can leak. Sovereign RAG (Retrieval-Augmented Generation) hosts your vector database (Qdrant/Neo4j) and retrieval models directly on dedicated server infrastructure. The AI answers customer questions using only your verified documents while keeping your corporate data completely isolated."
               citations={[
-                "Dynamic PDF Compilation Pipeline",
-                "Self-Service B2B Sales Workflow"
+                "Sovereign On-Premise Vector Indexing",
+                "Zero-Trust Egress Boundary Standards"
               ]}
             />
 
             <AnswerBlock 
-              question="Why custom automation outperforms monthly SaaS chatbot tools?"
-              answer="Standard third-party chatbot platforms charge monthly per-user fees (₹5,000–₹25,000/month), store your customer numbers on external shared clouds, and suffer from noticeable delay. Patnai builds dedicated, 100% sovereign systems hosted on your own server infrastructure with zero monthly platform rent, lifetime ownership, and sub-second response times."
+              question="Why is an instant 2-second WhatsApp quote superior to manual Excel calculations?"
+              answer="Manual quote generation creates a 2 to 6 hour latency bottleneck during which hot leads explore competitors. Patnai's automated PDF quotation engine handles complex algebraic pricing formulas, tax brackets, and custom dimension calculations on the fly, delivering an official downloadable PDF estimate on WhatsApp within 800ms of the customer selecting their requirements."
               citations={[
-                "Sovereign Business Infrastructure Economics",
-                "Zero Monthly Platform Fee Architecture"
+                "Dynamic In-Memory PDF Compilation Specs",
+                "B2B Sales Velocity Study"
               ]}
             />
           </div>
         </section>
 
-        {/* 2. Industry-Specific Automation Workflows */}
+        {/* 4. Cost & Latency Comparison Table */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">
-            2. Industry Use Cases & Automation Workflows
+            4. Comparative Performance & Cost Telemetry
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base mb-6 leading-relaxed">
-            How different business verticals in India deploy automated lead capture engines:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800">
-              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">01. Manufacturing & UPVC</span>
-              <h3 className="text-lg font-semibold text-white mb-2">Instant Window & Door Quotations</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Customers choose profile thickness, glass type, and total square footage on WhatsApp. System instantly outputs a formal PDF invoice breakdown with accurate commercial pricing.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800">
-              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">02. Real Estate & Builders</span>
-              <h3 className="text-lg font-semibold text-white mb-2">Site Visit Scheduling & Brochure Delivery</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Brochures and floor plans are delivered automatically upon enquiry. Prospects pick convenient site-visit time slots that sync directly to the sales manager&apos;s calendar.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800">
-              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">03. Clinics & Healthcare</span>
-              <h3 className="text-lg font-semibold text-white mb-2">Doctor Appointment Booking & Reminders</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Patients select doctor specializations and available clinic slots. Automated WhatsApp confirmation and morning reminders reduce patient no-shows by over 40%.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-xl bg-zinc-900/60 border border-zinc-800">
-              <span className="text-teal-400 font-mono text-xs uppercase tracking-wider block mb-2">04. Retail & D2C Brands</span>
-              <h3 className="text-lg font-semibold text-white mb-2">Catalog Browsing & Abandoned Cart Recovery</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Connects directly to your inventory. Sends automated payment links and re-engages warm shoppers who dropped off before completing checkout.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* 3. Performance & Cost Comparison */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-2 tracking-tight">
-            3. Cost & Latency Comparison: Custom vs SaaS vs Manual
-          </h2>
-          <p className="text-zinc-400 text-sm sm:text-base mb-6 leading-relaxed">
-            Real metrics comparing Patnai&apos;s custom-built dedicated systems against generic SaaS subscription apps and manual human handling:
+            Real metrics comparing Patnai&apos;s custom sovereign architecture against traditional software rentals and human staff overhead:
           </p>
 
           <ComparisonTable 
-            title="Business Automation Comparison Matrix"
-            headers={["Metric", "Patnai Custom System", "Generic SaaS Subscriptions", "Manual Staff Handling"]}
+            title="A2Z Enterprise Delivery Matrix"
+            headers={["Capability", "Patnai Custom Unified Stack", "Multiple Fragmented SaaS Tools", "Manual Human Operations"]}
             rows={[
-              ["First Response Speed", "Under 2.0 Seconds", "4 to 9 Seconds", "15 Mins to 4+ Hours"],
-              ["Instant PDF Quotes", "Automated in 800ms", "Rare / Requires 3rd party tool", "Manual Excel / 2-6 hours"],
-              ["Monthly Software Rent", "₹0 / month (100% Owned)", "₹8,000 – ₹25,000 / month", "High monthly staff salaries"],
-              ["Data Privacy & Storage", "Your Private Server / Sheets", "Shared Third-Party Database", "Scattered Personal Phones"],
-              ["Lead Handover to Team", "Instant WhatsApp Alert + Call Link", "Email digest / delayed", "Manual notes on paper"]
+              ["Website Performance", "Sub-second Next.js (< 500ms)", "Slow WordPress/Wix (3-7s)", "Outdated static pages"],
+              ["Lead Response Speed", "Instant 2-Second Webhook", "5-10 second chatbot delay", "15 mins to 4+ hours"],
+              ["Instant PDF Quotations", "Generated in 800ms via WhatsApp", "Requires manual export", "2-6 hours on Excel"],
+              ["AI Knowledge & RAG", "Sovereign local vector retrieval", "Generic ChatGPT wrapper", "Staff memory / manual docs"],
+              ["Recurring Platform Fees", "₹0 / month (100% Owned)", "₹15,000 – ₹40,000 / month", "Recurring employee salary overhead"],
+              ["Data Sovereignty", "100% Private Server Storage", "Shared public cloud", "Scattered WhatsApp chats"]
             ]}
           />
         </section>
 
-        {/* 4. Practical FAQ / Search Intent */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-6 tracking-tight">
-            Frequently Asked Questions by Business Owners
-          </h2>
-
-          <div className="space-y-4">
-            <AnswerBlock 
-              question="Can this integrate with our existing WhatsApp Business number?"
-              answer="Yes. We connect directly via official WhatsApp Business APIs. You retain your existing business phone number, verified green tick credentials, and customer contact history without any service interruption."
-              citations={["Meta Official Business API Standards"]}
-            />
-
-            <AnswerBlock 
-              question="How long does it take to deploy a full custom automation system?"
-              answer="A standard custom workflow—including WhatsApp lead qualification, automated quote generation, and CRM sync—is designed, built, tested, and handed over in a 14-day production sprint."
-              citations={["Patnai 14-Day Delivery Sprint Protocol"]}
-            />
-
-            <AnswerBlock 
-              question="Do we need technical staff to maintain the system after launch?"
-              answer="No. The entire system is built to operate autonomously. Leads flow directly into simple spreadsheets or your existing CRM, and customer alerts ping your team directly on their standard WhatsApp apps."
-              citations={["Zero-Maintenance Architecture Guidelines"]}
-            />
-          </div>
-        </section>
-
         {/* Call to Action Footer Box */}
         <div className="p-8 rounded-2xl bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 text-center">
-          <h3 className="text-2xl font-bold text-white mb-2">Ready to automate your inbound lead pipeline?</h3>
+          <h3 className="text-2xl font-bold text-white mb-2">Automate your entire business workflow with Patnai</h3>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto mb-6">
-            Get a clear, transparent architecture audit and fixed-price quote for your business workflow within 24 hours.
+            Get a fixed-price architectural plan and interactive prototype for your business within 24 hours. Serving Patna, Delhi, Kolkata, Bangalore, Lucknow, and global clients.
           </p>
           <Link 
             href="https://patnai.com"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-teal-500 hover:bg-teal-400 text-zinc-950 font-semibold text-sm transition-all shadow-lg shadow-teal-500/20"
           >
-            Explore Patnai Automation Systems →
+            Explore Patnai Systems on Patnai.com →
           </Link>
         </div>
 
