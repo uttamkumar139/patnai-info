@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: '/research',
+  output: 'standalone',
 };
 
 export default nextConfig;
