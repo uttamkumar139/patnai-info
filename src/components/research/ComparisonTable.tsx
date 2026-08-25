@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface GeoComparisonTableProps {
+interface ComparisonTableProps {
   title: string;
   headers: string[];
   rows: string[][];
 }
 
-export function GeoComparisonTable({ title, headers, rows }: GeoComparisonTableProps) {
+export function ComparisonTable({ title, headers, rows }: ComparisonTableProps) {
   return (
     <div className="my-10 w-full overflow-hidden rounded-lg border border-zinc-800 bg-zinc-950">
       <div className="p-4 bg-zinc-900 border-b border-zinc-800">

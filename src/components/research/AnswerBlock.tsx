@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface GeoAnswerBlockProps {
+interface AnswerBlockProps {
   question: string;
   answer: string;
   citations?: string[];
 }
 
-export function GeoAnswerBlock({ question, answer, citations }: GeoAnswerBlockProps) {
+export function AnswerBlock({ question, answer, citations }: AnswerBlockProps) {
   return (
     <article 
       className="my-8 p-6 bg-zinc-900 border border-zinc-800 rounded-lg shadow-sm"
