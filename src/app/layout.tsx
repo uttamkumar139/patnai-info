@@ -8,28 +8,22 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Patnai — A-to-Z Business Automation, Web, RAG & Custom AI Agents (Patna, Delhi, Bangalore & Global)",
-  description: "End-to-end engineering for modern businesses in Patna, Delhi, Kolkata, Bangalore, Lucknow & globally. We build Next.js websites, instant WhatsApp quotation engines, sovereign RAG knowledge bases, and autonomous AI agents with zero monthly SaaS fees.",
+  title: "Patnai Research & Engineering — Benchmarks, Architecture Studies & Systems Notes",
+  description: "Practical engineering notes, latency benchmarks, and architectural telemetry on business automation, private RAG, in-memory PDF quotation, and web performance.",
   keywords: [
-    "Patna best automation",
-    "AI automation agency Patna",
-    "web development studio Patna",
-    "business automation Delhi NCR",
-    "custom AI agents Bangalore",
-    "WhatsApp lead automation Kolkata",
-    "AI systems Lucknow",
-    "India best automation company",
-    "Sovereign RAG architecture",
-    "Instant PDF quotation automation",
-    "custom CRM WhatsApp integration",
-    "Next.js agency India"
+    "Patnai research",
+    "WhatsApp lead latency benchmark",
+    "self-hosted RAG architecture",
+    "in-memory PDF generation benchmark",
+    "business automation telemetry",
+    "enterprise AI architecture India"
   ],
   authors: [{ name: "Uttam Kumar", url: "https://patnai.com" }],
   openGraph: {
-    title: "Patnai — A-to-Z Business Automation, Web, RAG & Custom AI Agents",
-    description: "End-to-end engineering for real businesses. 2-second WhatsApp lead capture, instant quotes, sovereign RAG, and autonomous AI agents with zero monthly fees.",
+    title: "Patnai Research & Engineering — Systems Benchmarks & Telemetry",
+    description: "Practical engineering benchmarks and architecture notes on business automation, sovereign RAG, and high-throughput messaging pipelines.",
     url: "https://patnai.com/research",
-    siteName: "Patnai",
+    siteName: "Patnai Research",
     type: "website",
   }
 };
@@ -41,29 +35,24 @@ export default function RootLayout({
 }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Patnai AI & Engineering",
-    "description": "End-to-end business automation, Next.js web systems, instant WhatsApp quotation engines, sovereign RAG vector databases, and custom AI agents.",
+    "@type": "ResearchProject",
+    "name": "Patnai Research & Engineering",
+    "description": "Practical research, latency benchmarks, and architecture notes on business automation, sovereign RAG, and dynamic workflow systems.",
     "url": "https://patnai.com/research",
-    "areaServed": [
-      { "@type": "City", "name": "Patna" },
-      { "@type": "City", "name": "Delhi" },
-      { "@type": "City", "name": "Kolkata" },
-      { "@type": "City", "name": "Bangalore" },
-      { "@type": "City", "name": "Lucknow" },
-      { "@type": "Country", "name": "India" },
-      { "@type": "AdministrativeArea", "name": "Global" }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Patna",
-      "addressRegion": "Bihar",
-      "addressCountry": "IN"
+    "founder": {
+      "@type": "Person",
+      "name": "Uttam Kumar",
+      "jobTitle": "Principal Software Engineer"
     },
-    "sameAs": [
-      "https://patnai.com",
-      "https://github.com/uttamkumar139"
-    ]
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Patna",
+        "addressRegion": "Bihar",
+        "addressCountry": "IN"
+      }
+    }
   };
 
   return (
